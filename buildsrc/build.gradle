@@ -1,0 +1,19 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+group='com.meituan.router'
+version='1.0.0'
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('../repos'))
+        }
+    }
+}
