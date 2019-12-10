@@ -6,8 +6,7 @@ buildscript {
             url uri('./repos')
         }
 
-        maven { url "http://mvn.dianpingoa.com/android-nova" }
-        maven { url "http://depot.sankuai.com/nexus/content/groups/public/" }
+      
 
         jcenter()
         mavenCentral()
